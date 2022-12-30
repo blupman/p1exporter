@@ -92,17 +92,73 @@ class P1Collector:
                 name="p1_electricity_power_l1_in_kw",
                 documentation="Instantaneous electricity power L1 delivered to client (+P) in kW",
             ),
+            "1-0:41.7.0": GaugeMetricFamily(
+                name="p1_electricity_power_l2_in_kw",
+                documentation="Instantaneous electricity power L2 delivered to client (+P) in kW",
+            ),
+            "1-0:61.7.0": GaugeMetricFamily(
+                name="p1_electricity_power_l3_in_kw",
+                documentation="Instantaneous electricity power L2 delivered to client (+P) in kW",
+            ),
             "1-0:22.7.0": GaugeMetricFamily(
                 name="p1_electricity_power_l1_out_kw",
                 documentation="Instantaneous electricity power L1 delivered by client (+P) in kW",
+            ),
+            "1-0:42.7.0": GaugeMetricFamily(
+                name="p1_electricity_power_l2_out_kw",
+                documentation="Instantaneous electricity power L2 delivered by client (+P) in kW",
+            ),
+            "1-0:62.7.0": GaugeMetricFamily(
+                name="p1_electricity_power_l3_out_kw",
+                documentation="Instantaneous electricity power L3 delivered by client (+P) in kW",
             ),
             "1-0:31.7.0": GaugeMetricFamily(
                 name="p1_electricity_power_l1_amp",
                 documentation="Instantaneous electricity current L1 in A",
             ),
+            "1-0:51.7.0": GaugeMetricFamily(
+                name="p1_electricity_power_l2_amp",
+                documentation="Instantaneous electricity current L2 in A",
+            ),
+            "1-0:71.7.0": GaugeMetricFamily(
+                name="p1_electricity_power_l3_amp",
+                documentation="Instantaneous electricity current L3 in A",
+            ),
             "1-0:32.7.0": GaugeMetricFamily(
                 name="p1_electricity_power_l1_volt",
                 documentation="Instantaneous voltage L1 in V",
+            ),
+            "1-0:52.7.0": GaugeMetricFamily(
+                name="p1_electricity_power_l2_volt",
+                documentation="Instantaneous voltage L2 in V",
+            ),
+            "1-0:72.7.0": GaugeMetricFamily(
+                name="p1_electricity_power_l3_volt",
+                documentation="Instantaneous voltage L3 in V",
+            ),
+            "0-1:32.32.0": CounterMetricFamily(
+                name="p1_electricity_power_l1_voltage_sags",
+                documentation="Number of voltage sags on L1",
+            ),
+            "0-1:52.32.0": CounterMetricFamily(
+                name="p1_electricity_power_l2_voltage_sags",
+                documentation="Number of voltage sags on L2",
+            ),
+            "0-1:72.32.0": CounterMetricFamily(
+                name="p1_electricity_power_l3_voltage_sags",
+                documentation="Number of voltage sags on L3",
+            ),
+            "0-1:32.36.0": CounterMetricFamily(
+                name="p1_electricity_power_l1_voltage_swells",
+                documentation="Number of voltage swells on L1",
+            ),
+            "0-1:52.36.0": CounterMetricFamily(
+                name="p1_electricity_power_l2_voltage_swells",
+                documentation="Number of voltage swells on L2",
+            ),
+            "0-1:72.36.0": CounterMetricFamily(
+                name="p1_electricity_power_l3_voltage_swells",
+                documentation="Number of voltage swells on L3",
             ),
         }
 
